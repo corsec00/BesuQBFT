@@ -24,3 +24,11 @@ Start-Sleep -Milliseconds 500
 # Start Node4
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "docker run --privileged -p 8548:8548 -p 30306:30306 --rm -it --name Node4 --hostname Node4 --network=rede_besu --ip=10.10.0.14 besu:fiaptdc /bin/bash "
 Start-Sleep -Milliseconds 500
+
+# Start Node5
+# Start-Process powershell -ArgumentList "-NoExit", "-Command", "docker run --privileged -p 8549:8549 -p 30307:30307 --rm -it --name Node5 --hostname Node5 --network=rede_besu --ip=10.10.0.15 besu:fiaptdc /bin/bash "
+# Start-Sleep -Milliseconds 500
+
+# Start Node6
+# Start-Process powershell -ArgumentList "-NoExit", "-Command", "docker run --privileged -p 8550:8550 -p 30308:30308 --rm -it --name Node6 --hostname Node6 --network=rede_besu --ip=10.10.0.16 besu:fiaptdc /bin/bash "
+# Start-Sleep -Milliseconds 500

@@ -30,6 +30,9 @@ echo 'p2p-port=30303' >> $n1_path
 echo 'p2p-interface="0.0.0.0"' >> $n1_path
 echo 'nat-method="AUTO"' >> $n1_path
 
+#Minimo de nodes para consenso
+echo 'sync-min-peers=3' >> $n1_path
+
 echo -e "\n" >> $n1_path
 
 cd /besu-25.4.1/QBFT-Network/Node-1

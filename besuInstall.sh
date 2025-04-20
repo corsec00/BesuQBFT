@@ -7,6 +7,7 @@ sudo apt install openssh-server net-tools git open-vm-tools open-vm-tools-deskto
 sudo service ssh status
 sudo service ssh start
 sudo ufw allow ssh
+sudo ufw allow http https
 # No host local, para limpar o SSH  ssh-keygen -R 10.1.1.128
 # Acessar via ssh usuario@ip-do-servidor
 # Instalar o VMWare VM Tools (opcional, depende da instalação)

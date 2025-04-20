@@ -27,6 +27,10 @@ echo 'p2p-host="10.10.0.12"' >> $n2_path
 echo 'p2p-port="30304"' >> $n2_path
 echo 'p2p-interface="0.0.0.0"' >> $n2_path
 echo 'nat-method="AUTO"' >> $n2_path
+
+#Minimo de nodes para consenso
+echo 'sync-min-peers=3' >> $n1_path
+
 echo -e "\n" >> $n2_path
 
 echo "# Bootnodes" >> $n2_path
