@@ -1,4 +1,4 @@
-# Pega a ultima imagem do Ubuntu em dockerhub. Lasted ser[a a 24.04 --> https://hub.docker.com/_/ubuntu]
+# Pega a ultima imagem do Ubuntu em dockerhub. Lasted sera a 24.04 --> https://hub.docker.com/_/ubuntu]
 FROM ubuntu:latest
 
 # Atualiza as dependencias do ubuntu e instala o wget
