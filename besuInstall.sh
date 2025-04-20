@@ -12,7 +12,6 @@ sudo ufw allow http https
 # Acessar via ssh usuario@ip-do-servidor
 # Instalar o VMWare VM Tools (opcional, depende da instalação)
 
-
 ##################################################
 # Requisitos 
 ##################################################
@@ -135,3 +134,8 @@ docker run -p 3000:3000 grafana/grafana &
 # Acesse o Grafana em  http://localhost:3000 com admin:admin
 # Adicione o Prometheus como fonte de dados (http://localhost:9090).
 # Importe um painel para monitorar o Besu: Você pode usar painéis prontos, como o Besu Overview, que fornece métricas detalhadas sobre o desempenho do nó, estado de sincronização, taxa de importação de blocos, uso de CPU e memória.
+
+
+
+  git config --global user.email "corsec00@gmail.com"
+  git config --global user.name "Leo Santos"
