@@ -3,25 +3,30 @@
 # Instalando o BESU com os binários
 ##################################################
 # 1 - https://www.youtube.com/watch?v=AWW_Ap84qJc # (Utilizado pela TECBAN e Dinamo Networks - 1:09:05)
-# 2 - https://github.com/alexandregomes3112/Private-BESU-QBFT 
-
-# Instalar o git: https://git-scm.com/download/win
-# Instalar o Visual Studio Code: https://code.visualstudio.com/download
-# Instalar o Docker Desktop: https://www.docker.com/products/docker-desktop/
-# Instalar o WLS (Windows Subsystem for Linux)
+# 2 - Instale o Git (https://git-scm.com/download/win)
+# 3 - 
+# 4 - Instale o Visual Studio Code (https://code.visualstudio.com/download)
+# 5 - Instale o Windows Subsystem for Linux (WSL) (https://docs.microsoft.com/pt-br/windows/wsl/install)
 wsl --install
 wsl --list --online
 wsl --install -d Ubuntu-24.04 
 wsl --list --verbose
 wsl --update
+# 6 - Habilitar virtualização
+
+$nome_VM = "Besu-win11"
+Set-VMProcessor -VMName $nome_VM -ExposeVirtualizationExtensions $true
+
+# 7 - Instale o Docker Desktop (https://www.docker.com/products/docker-desktop/)
+
 # Se for uma VM - Coloque a virtualização em modo de aninhamento (nested virtualization) na CPU da VM
 
-# Atualizar o Azure CLI
+# 8 - Atualizar o Azure CLI
 winget install --exact --id Microsoft.AzureCLI
 
-# Fork do Github
+# 9 - Fork do Github
 git clone https://github.com/corsec00/BesuQBFT.git
-cd BesuQBFT
+set-location BesuQBFT
 
 # Constroi a estrutura do Besu
 docker build -t besu:fiaptdc .
