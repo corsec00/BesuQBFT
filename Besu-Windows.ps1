@@ -2,7 +2,7 @@
 ##################################################
 # Instalando o BESU com os binários
 ##################################################
-# 1 - https://www.youtube.com/watch?v=AWW_Ap84qJc # (Utilizado pela TECBAN e Dinamo Networks - 1:01:05)
+# 1 - https://www.youtube.com/watch?v=AWW_Ap84qJc # (Utilizado pela TECBAN e Dinamo Networks - 1:09:05)
 # 2 - https://github.com/alexandregomes3112/Private-BESU-QBFT 
 
 # Instalar o git: https://git-scm.com/download/win
@@ -33,6 +33,13 @@ docker build -t besu:fiaptdc .
 .\n2up.sh # main | INFO  | DefaultP2PNetwork | Enode URL enode://f997a7ef606c9cef9ddd8345a4b80166363394c617f290f9fb6fec553a370486a06f17c4383f65dd542a024ded1abfdb7fe20c2d60b6fa64c05d2fe5be54c3ab@10.10.0.12:30304
 .\n3up.sh # main | INFO  | DefaultP2PNetwork | Enode URL enode://a46c2edd6afa58f893ac929461702b70db6c7b936801fcb74fb11657ff6fdd9cc9167ccd442fec4c1befabee55baa7cb002794c2147bfe8ed461ec98cf40ded6@10.10.0.13:30305
 .\n4up.sh # main | INFO  | DefaultP2PNetwork | Enode URL enode://dac208382fabd4ef8941b0e607a2f705953005563d46104206de220363a7242c0ee5c2e1bec58ff3e39e225e51b0d7d954a6c6537ad1800afb429cafe5f492db@10.10.0.14:30306
+
+# Configurar o Chainless --> https://besu.hyperledger.org/private-networks/how-to/monitor/chainlens
+git clone https://github.com/web3labs/chainlens-free.git # (dentro do WLS)
+cd chainlens-free/docker-compose/
+NODE_ENDPOINT=http://10.10.0.11:8545 docker-compose up# (dentro do WLS)
+# http://localhost
+
 
 #Atualiza tudo com o winget
 winget update --accept-package-agreements --accept-source-agreements --all --force --disable-interactivity --nowarn --include-unknown
