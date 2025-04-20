@@ -1,5 +1,6 @@
 # BesuQBFT
-Instalação de uma rede Hyperledger BESU com 4 nós
+Instalação de uma rede Hyperledger BESU com 4 nós.
+
 Este laboratório tem como base o trabalho de @alexandregomes3112
 ## Pré Requisitos
 ✅ Windows 11
@@ -16,6 +17,7 @@ Este laboratório tem como base o trabalho de @alexandregomes3112
 ✅ Ubunto para WSL instalado (https://apps.microsoft.com/detail/9nz3klhxdjp5?hl=en-US&gl=US)
 ✅ Docker e Docker Compose (https://www.docker.com/products/docker-desktop/) instalados
 ✅ Conta ativada no Github
+✅ Instale o MetaMask ou acesse a partir do seu navegador (https://microsoftedge.microsoft.com/addons/detail/metamask/ejbalbakoplchlghecdalmeeeajnimhm) - Exemplo no Microsoft Edge
 ✅ Atualizaçao de pacotes do Azure CLI e Terminal 
     ```sh
     winget install --id Microsoft.PowerShell.Preview --source winget
