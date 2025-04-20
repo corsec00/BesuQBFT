@@ -20,11 +20,11 @@ wsl --update
 winget install --exact --id Microsoft.AzureCLI
 
 # Fork do Github
-git clone https://github.com/alexandregomes3112/Private-BESU-QBFT.git
-cd Private-BESU-QBFT/
+git clone https://github.com/corsec00/BesuQBFT.git
+cd BesuQBFT
 
 # Constroi a estrutura do Besu
-docker build -t besu:lfdt .
+docker build -t besu:fiaptdc .
 
 # Inicie a demo do besu
 .\start_demo.ps1
