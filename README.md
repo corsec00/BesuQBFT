@@ -3,7 +3,10 @@ Esse é o laboratório para estruturar o ambiente do Hyperledger BESU, na config
 Instalação de uma rede Hyperledger BESU com 4 nodes (1 Ordering Service e 3 Nodes participantes), protocolo Quorum Byzantine Fault Tolerance (QBFT) e o explorador de blocos Chainless para acompanhamento das transações. <br />
 Esse laboratório não possui nenhuma recomendação ou dica que possa ser usada como vantagem competitiva entre os grupos. Apenas a estrutura básica para que o blockchain seja montado. <br />
 Ele foi montado em uma VM na Azure, com o tipo D4ads_v6 em West Central US, atrelado à uma VNet com NSG e ASG configurado para permitir as ports de gerenciamento e as usadas pelo BESU. <br />
-
+Novo no Blockchain? Assista à este vídeo abaixo<br />
+<a href="https://www.youtube.com/watch?v=6e4Q_hzTv90" target="_blank">
+  <img src="https://img.youtube.com/vi/6e4Q_hzTv90/maxresdefault.jpg" alt="Assista ao vídeo" width="400" />
+</a>
 ## Pré Requisitos
 ✅ Windows 11 <br />
 ✅ Virtualização habilitada <br />
