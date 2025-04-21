@@ -5,7 +5,7 @@ BESU_URL="http://10.10.0.11:8545"
 response=$(curl -s -X POST --data '{"jsonrpc":"2.0","method":"admin_nodeInfo","params":[],"id":1}' $BESU_URL)
 enode_address=$(echo $response | jq -r '.result.enode')
 
-n4_path=/besu-25.4.1/QBFT-Network/Node-5/cfg_n5.toml
+n5_path=/besu-25.4.1/QBFT-Network/Node-5/cfg_n5.toml
 
 echo "# NODE 5 Config File" > $n5_path
 echo 'data-path="data"' >> $n5_path
@@ -30,7 +30,7 @@ echo 'p2p-interface="0.0.0.0"' >> $n5_path
 echo 'nat-method="AUTO"' >> $n5_path
 
 #Minimo de nodes para consenso
-echo 'sync-min-peers=3' >> $n1_path
+echo 'sync-min-peers=3' >> $n5_path
 
 echo -e "\n" >> $n5_path
 
