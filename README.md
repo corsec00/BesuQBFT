@@ -71,6 +71,7 @@ Realize transações entre as contas e veja no Chainless os resultados.<br />
 ## Próximos passos
 Configurar o Quorum Dev Quickstart na Azure<br />
 Implementar no Azure Container Registry (ACR)<br />
-Gerenciar a rede via Kubernetes (AKS) com CNI
+Gerenciar a rede via Kubernetes (AKS) com CNI<br />
+Configurar Prometheus e Grafana para coletar métricas e gerar dashboards
 ## Considerações Finais
 Este laboratório foi inspirado no trabalho de [Alexandre Gomes](https://github.com/alexandregomes3112)
