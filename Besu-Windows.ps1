@@ -54,6 +54,5 @@ NODE_ENDPOINT=http://10.10.0.11:8545 docker-compose up # (dentro do WLS)
 # Importar as chaves dos Tokens (nao as chaves de infraestrutura) para o Metamask 
 
 
-
 #Atualiza tudo com o winget
 winget update --accept-package-agreements --accept-source-agreements --all --force --disable-interactivity --nowarn --include-unknown

@@ -116,13 +116,6 @@ sudo chmod -R 755 RedeBesu
 
 
 
-
-
-
-
-
-
-
 # Instalando o Prometheus
 docker pull prom/prometheus
 docker run -p 9090:9090 prom/prometheus ## Ativo
