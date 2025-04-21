@@ -1,6 +1,5 @@
 # Pega a ultima imagem do Ubuntu em dockerhub. Lasted sera a 24.04 --> https://hub.docker.com/_/ubuntu]
 FROM ubuntu:latest
-
 # Atualiza as dependencias do ubuntu e instala o wget
 RUN apt-get update \
     && apt-get install -y wget

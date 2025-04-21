@@ -15,6 +15,7 @@ echo -e "\n" >> $n6_path
 
 echo "# RPC" >> $n6_path
 echo 'rpc-http-enabled=true' >> $n6_path
+# Parametros do Drex: https://besu.hyperledger.org/stable/public-networks/reference/api
 echo 'rpc-http-api=["DEBUG","ETH", "ADMIN", "WEB3", "QBFT", "NET", "EEA", "PRIV", "PERM","TXPOOL","PLUGINS","MINER","TRACE"]' >> $n6_path
 echo 'rpc-http-cors-origins=["all"]' >> $n6_path
 echo 'rpc-http-host="0.0.0.0"' >> $n6_path

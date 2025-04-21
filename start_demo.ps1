@@ -25,6 +25,8 @@ Start-Sleep -Milliseconds 500
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "docker run --privileged -p 8548:8548 -p 30306:30306 --rm -it --name Node4 --hostname Node4 --network=rede_besu --ip=10.10.0.14 besu:fiaptdc /bin/bash "
 Start-Sleep -Milliseconds 500
 
+#Caso queira aumentar a quantidade de nodes no futuro, basta descomentar as linhas abaixo e executar o script novamente.
+
 # Start Node5
 # Start-Process powershell -ArgumentList "-NoExit", "-Command", "docker run --privileged -p 8549:8549 -p 30307:30307 --rm -it --name Node5 --hostname Node5 --network=rede_besu --ip=10.10.0.15 besu:fiaptdc /bin/bash "
 # Start-Sleep -Milliseconds 500

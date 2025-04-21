@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Define o caminho principal para as pastas com as chaves
+# Define o caminho principal para as pastas com as chaves.
 directory="/besu-25.4.1/QBFT-Network/networkFiles/keys"
 
 # Verifica se o caminho realmente existe
