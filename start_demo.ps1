@@ -6,9 +6,13 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 Start-Job -ScriptBlock {
     docker network create --subnet=10.10.0.0/24 rede_besu
 }
-## Cria a rede rede_besu com o IP definido para cada nó de acordo com o besu:fiaptdc. Quando terminar, o container eh removido (--rm) e o container eh iniciado em modo interativo (-it) com o bash (/bin/bash). 
-# O --privileged eh usado para permitir acesso total ao host. O -p eh usado para mapear as portas do host para as portas do container. 
-# O --hostname eh usado para definir o nome do host do container. O --network eh usado para conectar o container a rede_besu. O --ip eh usado para definir o IP do container na rede_besu.
+## Cria a rede rede_besu com o IP definido para cada nó de acordo com a imagem besu:fiaptdc. Quando terminar, o container eh removido (--rm) e o container eh iniciado em modo interativo (-it) com o bash (/bin/bash). 
+# O --privileged eh usado para permitir acesso total ao host. 
+# O -p eh usado para mapear as portas do host para as portas do container. 
+# O --hostname eh usado para definir o nome do host do container. 
+# O --network eh usado para conectar o container a rede_besu. 
+# O --ip eh usado para definir o IP do container na rede_besu.
+
 # Start Node1
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "docker run --privileged -p 8545:8545 -p 30303:30303 --rm -it --name Node1 --hostname Node1 --network=rede_besu --ip=10.10.0.11 besu:fiaptdc /bin/bash "
 Start-Sleep -Milliseconds 500
@@ -25,7 +29,7 @@ Start-Sleep -Milliseconds 500
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "docker run --privileged -p 8548:8548 -p 30306:30306 --rm -it --name Node4 --hostname Node4 --network=rede_besu --ip=10.10.0.14 besu:fiaptdc /bin/bash "
 Start-Sleep -Milliseconds 500
 
-#Caso queira aumentar a quantidade de nodes no futuro, basta descomentar as linhas abaixo e executar o script novamente.
+# Caso queira aumentar a quantidade de nodes no futuro, basta descomentar as linhas abaixo e executar o script novamente.
 
 # Start Node5
 # Start-Process powershell -ArgumentList "-NoExit", "-Command", "docker run --privileged -p 8549:8549 -p 30307:30307 --rm -it --name Node5 --hostname Node5 --network=rede_besu --ip=10.10.0.15 besu:fiaptdc /bin/bash "
