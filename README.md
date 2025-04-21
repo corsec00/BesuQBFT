@@ -1,6 +1,6 @@
 # BesuQBFT
 Esse é o laboratório para estruturar o ambiente do [Hyperledger BESU](https://github.com/hyperledger/besu/releases) (versão 25.4.1), na configuração padrão, para servir de base para o Challenge dos alunos da FIAP, do curso de Tecnologia de Defesa Cibernética (TDC).<br />
-Instalação de uma rede Hyperledger BESU com 4 nodes (1 Bootloader e 3 Nodes participantes), protocolo Quorum Byzantine Fault Tolerance ([QBFT](https://docs.goquorum.consensys.io/configure-and-manage/configure/consensus-protocols/qbft)) e o explorador de blocos Chainless para acompanhamento das transações. <br />
+Instalação de uma rede Hyperledger BESU com 4 nodes (1 Bootnode e 3 Nodes participantes), protocolo Quorum Byzantine Fault Tolerance ([QBFT](https://docs.goquorum.consensys.io/configure-and-manage/configure/consensus-protocols/qbft)) e o explorador de blocos Chainless para acompanhamento das transações. <br />
 Esse laboratório não possui nenhuma recomendação ou dica que possa ser usada como vantagem competitiva entre os grupos. Apenas a estrutura básica para que o blockchain seja montado. <br />
 Ele foi montado em uma VM na Azure, tipo D4ads_v6 em West Central US, atrelado à uma VNet com NSG e ASG configurado para permitir as ports de gerenciamento e as usadas pelo BESU. <br />
 Novo no Blockchain? Assista à este vídeo abaixo...<br />
