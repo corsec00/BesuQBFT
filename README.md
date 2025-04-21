@@ -68,5 +68,9 @@ Selecione a rede `Localhost 8545` na MetaMask.
 Em caso de dúvidas, consulte a [Documentação Oficial](https://besu.hyperledger.org/private-networks/tutorials/quickstart#create-a-transaction-using-metamask)<br />
 Realize transações entre as contas e veja no Chainless os resultados.<br />
 ![Operações com o Metamask](img/metamask.jpg)
+## Próximos passos
+Configurar o Quorum Dev Quickstart na Azure<br />
+Implementar no Azure Container Registry (ACR)<br />
+Gerenciar a rede via Kubernetes (AKS) com CNI
 ## Considerações Finais
 Este laboratório foi inspirado no trabalho de [Alexandre Gomes](https://github.com/alexandregomes3112)
